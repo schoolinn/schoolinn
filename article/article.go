@@ -8,7 +8,7 @@ import (
 
 type Art struct
 {
-	Title string
+	Title,Content,Dec,Time,Utime string
 	Tag    interface{}      `bson:"tag"`
 }
 
