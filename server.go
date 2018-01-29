@@ -6,6 +6,7 @@ import (
 	"schoolinn/article"
 	"schoolinn/tags"
 	"schoolinn/tag_art"
+	"schoolinn/que"
 )
 
 func main() {
@@ -14,6 +15,7 @@ func main() {
 	r.GET("/ping", user.Cb)
 	r.GET("/article", article.Cb)
 	r.GET("/tag", tags.Cb)
+	r.GET("/que", que.Cb)
 	r.GET("/tag_art/:id", tag_art.Cb)
 	r.Run(":3000") // listen and serve on 0.0.0.0:8080
 }
